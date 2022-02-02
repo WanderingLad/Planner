@@ -30,6 +30,22 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <?php for($i = 8; $i < 18; $i++)
+      {
+        ?>
+
+        <div id="hour<?php echo $i; ?>" class="row time-block">
+          <div class="hour">
+          <p><?php echo ($i <= 12) ? $i . " am" : $i - 12 . " pm";?></p>
+          </div>
+          <textarea class="description"></textarea>
+          <button class="saveBtn"></button>
+        </div>
+
+
+        
+        <?php
+      }?>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

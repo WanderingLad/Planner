@@ -1,1 +1,1 @@
-abc
+$("#currentDay").text(moment().format("dddd, MMMM YYYY"))
